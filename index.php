@@ -1,8 +1,10 @@
 <?php  
-// INSERT INTO `notes` (`sno`, `title`, `description`, `tstamp`) VALUES (NULL, 'But Books', 'Please buy books from Store', current_timestamp());
-$insert = false;
-$update = false;
-$delete = false;
+
+$insert = false; // true if new note is inserted 
+$update = false; // true if new note is updated 
+$delete = false; // true if new note is deleted
+
+
 // Connect to the Database 
 $servername = "localhost";
 $username = "root";
@@ -219,6 +221,7 @@ else{
     </table>
   </div>
   <hr>
+
   <!-- Optional JavaScript -->
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
   <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
@@ -231,6 +234,7 @@ else{
     integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
     crossorigin="anonymous"></script>
   <script src="//cdn.datatables.net/1.10.20/js/jquery.dataTables.min.js"></script>
+  
   <script>
     $(document).ready(function () {
       $('#myTable').DataTable();
