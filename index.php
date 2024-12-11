@@ -103,7 +103,7 @@ else{
 
             <div class="form-group">
               <label for="desc">Note Description</label>
-              <textarea class="form-control" id="descriptionEdit" name="descriptionEdit" rows="3"></textarea>
+              <textarea class="form-control" id="descriptionEdit" name="descriptionEdit" rows="3" Required></textarea>
             </div> 
           </div>
           <div class="modal-footer d-block mr-auto">
@@ -177,12 +177,12 @@ else{
     <form action="/crud/index.php" method="POST">
       <div class="form-group">
         <label for="title">Note Title</label>
-        <input type="text" class="form-control" id="title" name="title" aria-describedby="emailHelp">
+        <input type="text" class="form-control" id="title" name="title" aria-describedby="emailHelp" Required>
       </div>
 
       <div class="form-group">
         <label for="desc">Note Description</label>
-        <textarea class="form-control" id="description" name="description" rows="3"></textarea>
+        <textarea class="form-control" id="description" name="description" rows="3" Required></textarea>
       </div>
       <button type="submit" class="btn btn-primary">Add Note</button>
     </form>
@@ -234,7 +234,7 @@ else{
     integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
     crossorigin="anonymous"></script>
   <script src="//cdn.datatables.net/1.10.20/js/jquery.dataTables.min.js"></script>
-  
+
   <script>
     $(document).ready(function () {
       $('#myTable').DataTable();
